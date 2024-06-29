@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B994BF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe Book"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        ></TextView>
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search on Google"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSearch"
+        android:text="Search"
+        android:onClick="searchOnGoogle"
+        android:id="@+id/buttonSearch"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of the Recipe"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etName"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredients"
+        android:layout_marginTop="10dp"
+        android:id="@+id/etIng"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_marginTop="10dp"
+        android:id="@+id/etDesc"></EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonClear"></Button>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Recipe"
+        android:id="@+id/buttonSave"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        ></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Recipe"
+        android:layout_marginTop="12dp"
+        android:id="@+id/buttonDelete"
+        android:layout_gravity="center"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all Recipes"
+        android:layout_marginTop="12dp"
+        android:id="@+id/buttonView"
+        android:layout_gravity="center"
+        ></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_gravity="center"
+        android:id="@+id/buttonUpdate"></Button>
+
+
+</LinearLayout>
